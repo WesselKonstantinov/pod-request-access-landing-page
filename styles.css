@@ -98,3 +98,25 @@ body {
   line-height: 1.66;
   display: flex;
 }
+
+/* || Page styles */
+.page {
+  position: relative;
+  max-width: 79.6875rem;
+  margin-inline: auto;
+  padding: 3.875rem 1.5rem;
+}
+
+.page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-image: url("assets/mobile/image-host.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
