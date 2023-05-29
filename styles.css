@@ -95,7 +95,7 @@ body {
   font-family: var(--font-family-primary);
   font-size: 0.9375rem;
   font-weight: 400;
-  line-height: 1.66;
+  line-height: 1.67;
   display: flex;
 }
 
@@ -153,4 +153,53 @@ body {
 .header__logo {
   width: 8.4375rem;
   height: 3.5rem;
+}
+
+/* || Hero styles */
+.hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+
+.hero__title {
+  font-size: 1.625rem;
+  line-height: 1.46;
+  font-weight: inherit;
+  text-transform: uppercase;
+  color: var(--color-pale-green-200);
+}
+
+.hero__title-highlight {
+  color: var(--color-white);
+}
+
+.hero__podcast-icons {
+  margin-top: 1.0625rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero__podcast-icon {
+  height: 1.0625rem;
+  object-fit: contain;
+}
+
+.hero__podcast-icon--spotify {
+  width: 3.5rem;
+}
+
+.hero__podcast-icon--apple {
+  width: 2.8125rem;
+}
+
+.hero__podcast-icon--google {
+  width: 4.5625rem;
+}
+
+.hero__podcast-icon--pocket {
+  width: 4.8125rem;
 }
