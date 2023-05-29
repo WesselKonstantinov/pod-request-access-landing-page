@@ -99,12 +99,27 @@ body {
   display: flex;
 }
 
+.sr-only {
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  padding: 0;
+  margin: -0.0625rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 /* || Page styles */
 .page {
   position: relative;
   max-width: 79.6875rem;
   margin-inline: auto;
   padding: 3.875rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5625rem;
 }
 
 .page::before {
