@@ -74,3 +74,16 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* || Custom properties */
+:root {
+  --color-white: hsl(0 0% 100%);
+  --color-pale-green-100: hsl(157 100% 85%);
+  --color-pale-green-200: hsl(157 74% 62%);
+  --color-dark-blue: hsl(224 35% 11%);
+  --color-grayish-blue-100: hsl(225 40% 83%);
+  --color-grayish-blue-200: hsl(225 21% 45%);
+  --color-grayish-blue-300: hsl(225 26% 23%);
+  --color-red: hsl(0 96% 61%);
+  --font-family-primary: "Chivo", sans-serif;
+}
