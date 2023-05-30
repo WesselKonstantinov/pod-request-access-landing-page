@@ -290,7 +290,7 @@ body {
     background-color: var(--color-dark-blue);
     text-align: left;
     gap: 1.9375rem;
-    padding-block: 5.8125rem;
+    padding: 5.8125rem 0;
   }
 
   .hero__title {
@@ -303,7 +303,30 @@ body {
   }
 
   .hero__podcast-icons {
+    max-width: 33.5rem;
     order: 1;
+    justify-content: space-between;
+    margin-top: 2.0625rem;
+  }
+
+  .hero__podcast-icon {
+    height: 1.8125rem;
+  }
+
+  .hero__podcast-icon--spotify {
+    width: 6rem;
+  }
+
+  .hero__podcast-icon--apple {
+    width: 4.875rem;
+  }
+
+  .hero__podcast-icon--google {
+    width: 7.8125rem;
+  }
+
+  .hero__podcast-icon--pocket {
+    width: 8.0625rem;
   }
 
   .cta-form {
