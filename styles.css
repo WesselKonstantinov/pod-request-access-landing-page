@@ -272,6 +272,13 @@ body {
     opacity: 1;
   }
 
+  .page::after {
+    content: url("assets/desktop/bg-pattern-dots.svg");
+    position: absolute;
+    left: 1.875rem;
+    bottom: 0;
+  }
+
   .header {
     justify-content: flex-start;
   }
