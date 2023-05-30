@@ -241,7 +241,7 @@ body {
 }
 
 .cta-form__error {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   display: none;
 }
 
@@ -349,6 +349,9 @@ body {
   }
 
   .cta-form__error {
-    padding-left: 2rem;
+    margin-top: 0;
+    position: absolute; /* Prevents layout shift of podcast icons when error message is visible */
+    top: 4rem;
+    left: 2rem;
   }
 }
