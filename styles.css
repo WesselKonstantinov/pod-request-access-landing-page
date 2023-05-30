@@ -203,3 +203,53 @@ body {
 .hero__podcast-icon--pocket {
   width: 4.8125rem;
 }
+
+/* || CTA form styles */
+.cta-form {
+  font-size: 0.875rem;
+  line-height: 2;
+  margin-top: 1.875rem;
+}
+
+.cta-form__input,
+.cta-form__submit {
+  width: 100%;
+  border-radius: 1.75rem;
+  background-color: var(--color-grayish-blue-300);
+  border: none;
+  padding: 0.5625rem 2rem;
+  color: var(--color-white);
+}
+
+.cta-form__input::placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+.cta-form__submit {
+  cursor: pointer;
+  background-color: var(--color-pale-green-200);
+  color: var(--color-dark-blue);
+  box-shadow: 0 1.5625rem 1.25rem -1.25rem hsl(157 74% 62% / 0.5);
+  margin-top: 1rem;
+  transition: background-color 0.2s ease-in-out 0s;
+}
+
+.cta-form__submit:hover {
+  background-color: var(--color-pale-green-100);
+}
+
+.cta-form__error {
+  margin-top: 0.5rem;
+  display: none;
+}
+
+.cta-form__error--visible {
+  display: block;
+}
+
+.cta-form__error-message {
+  color: var(--color-red);
+  font-size: 0.75rem;
+  line-height: 1.167;
+}
