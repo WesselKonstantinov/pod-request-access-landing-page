@@ -72,7 +72,7 @@
             class="hero__podcast-icon hero__podcast-icon--pocket"
           />
         </div>
-        <form class="cta-form">
+        <form class="cta-form" data-js="form">
           <label for="email" class="sr-only">Email</label>
           <input
             type="email"
@@ -82,11 +82,21 @@
             placeholder="Email address"
             class="cta-form__input"
             aria-describedby="email-error"
+            data-js="form-input"
           />
-          <div id="email-error" class="cta-form__error" aria-live="polite">
-            <p class="cta-form__error-message">Oops! Please check your email</p>
+          <div
+            id="email-error"
+            class="cta-form__error"
+            aria-live="polite"
+            data-js="form-error"
+          >
+            <p class="cta-form__error-message" data-js="form-error-message">
+              Oops! Please check your email
+            </p>
           </div>
-          <button type="submit" class="cta-form__submit">Request access</button>
+          <button type="submit" class="cta-form__submit" data-js="form-submit">
+            Request access
+          </button>
         </form>
       </main>
     </div>
