@@ -305,4 +305,27 @@ body {
   .hero__podcast-icons {
     order: 1;
   }
+
+  .cta-form {
+    position: relative;
+    margin-top: 0.5625rem;
+  }
+
+  .cta-form__input {
+    padding: 0.875rem 2rem;
+    max-width: 26.6875rem;
+  }
+
+  .cta-form__submit {
+    margin-top: 0;
+    padding: 0.5625rem 1.6875rem;
+    width: initial;
+    position: absolute;
+    top: 0.3125rem;
+    right: 13.3rem;
+  }
+
+  .cta-form__error {
+    padding-left: 2rem;
+  }
 }
