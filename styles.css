@@ -114,9 +114,9 @@ body {
 /* || Page styles */
 .page {
   position: relative;
-  max-width: 79.6875rem;
-  margin-inline: auto;
+  /* max-width: 79.6875rem; */
   padding: 3.875rem 1.5rem;
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 3.5625rem;
@@ -231,6 +231,7 @@ body {
   background-color: var(--color-pale-green-200);
   color: var(--color-dark-blue);
   box-shadow: 0 1.5625rem 1.25rem -1.25rem hsl(157 74% 62% / 0.5);
+  text-transform: capitalize;
   margin-top: 1rem;
   transition: background-color 0.2s ease-in-out 0s;
 }
@@ -263,6 +264,7 @@ body {
 
   .page {
     padding: 3.125rem 2.4375rem;
+    gap: 9.5rem;
   }
 
   .page::before {
@@ -281,5 +283,26 @@ body {
 
   .header {
     justify-content: flex-start;
+  }
+
+  .hero {
+    max-width: 39.6875rem;
+    background-color: var(--color-dark-blue);
+    text-align: left;
+    gap: 1.9375rem;
+    padding-block: 5.8125rem;
+  }
+
+  .hero__title {
+    font-size: 3rem;
+    line-height: 1.17;
+  }
+
+  .hero__text {
+    max-width: 40ch;
+  }
+
+  .hero__podcast-icons {
+    order: 1;
   }
 }
