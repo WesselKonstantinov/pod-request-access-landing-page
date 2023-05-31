@@ -114,7 +114,6 @@ body {
 /* || Page styles */
 .page {
   position: relative;
-  /* max-width: 79.6875rem; */
   padding: 3.875rem 1.5rem;
   flex: 1;
   display: flex;
@@ -353,5 +352,48 @@ body {
     position: absolute; /* Prevents layout shift of podcast icons when error message is visible */
     top: 4rem;
     left: 2rem;
+  }
+}
+
+/* || Desktop styles */
+@media (min-width: 90rem) {
+  .page {
+    padding: 6.375rem 10.3125rem;
+    gap: 6.4375rem;
+  }
+
+  .page::before {
+    background-image: url("assets/desktop/image-host.jpg");
+    background-position: top 8rem right;
+  }
+
+  .page::after {
+    left: unset;
+    right: 0;
+    bottom: 5.75rem;
+  }
+
+  .hero {
+    max-width: 45.1875rem;
+    gap: 1.5rem;
+    padding: 5.5rem 0 0;
+  }
+
+  .hero__title {
+    font-size: 3.25rem;
+    line-height: 1.19;
+  }
+
+  .hero__podcast-icons {
+    margin-top: 2.5rem;
+  }
+
+  .cta-form {
+    margin-top: 1rem;
+  }
+
+  .cta-form__submit {
+    box-shadow: 0 0.125rem 0.25rem hsl(157 74% 62% / 0.14);
+    right: 18.8rem;
   }
 }
