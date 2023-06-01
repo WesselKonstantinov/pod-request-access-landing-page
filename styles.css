@@ -285,7 +285,12 @@ button:focus-visible {
   }
 
   .page::after {
-    content: url("assets/desktop/bg-pattern-dots.svg");
+    /* content: url("assets/desktop/bg-pattern-dots.svg"); */
+    content: "";
+    background-image: url("assets/desktop/bg-pattern-dots.svg");
+    background-repeat: no-repeat;
+    width: 14.5rem;
+    height: 6.5rem;
     position: absolute;
     left: 1.875rem;
     bottom: 0;
@@ -381,7 +386,7 @@ button:focus-visible {
   .page::after {
     left: initial;
     right: 0;
-    bottom: 1rem;
+    bottom: 1.5rem;
   }
 
   .hero {
