@@ -117,6 +117,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3.5625rem;
+  max-width: 90rem;
+  margin-inline: auto;
 }
 
 .page::before {
@@ -152,7 +154,7 @@ body {
   height: 3.5rem;
 }
 
-/* || Hero styles */
+/* || Hero and podcast icons styles */
 .hero {
   text-align: center;
   display: flex;
@@ -174,8 +176,9 @@ body {
 
 .hero__podcast-icons {
   margin-top: 1.0625rem;
+  max-width: 33.5rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -253,7 +256,7 @@ body {
 }
 
 /* || Tablet styles */
-@media (min-width: 38.125rem) {
+@media (min-width: 37.5rem) {
   body {
     font-size: 1.125rem;
     line-height: 1.56;
@@ -300,7 +303,6 @@ body {
   }
 
   .hero__podcast-icons {
-    max-width: 33.5rem;
     order: 1;
     justify-content: space-between;
     margin-top: 2.0625rem;
@@ -354,7 +356,7 @@ body {
 }
 
 /* || Desktop styles */
-@media (min-width: 90rem) {
+@media (min-width: 75.625rem) {
   .page {
     position: relative;
     padding: 6.375rem 10.3125rem 4.62375rem;
