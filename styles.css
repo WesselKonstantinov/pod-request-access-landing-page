@@ -96,7 +96,7 @@ body {
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.67;
-  display: flex;
+  position: relative;
 }
 
 .sr-only {
@@ -113,9 +113,7 @@ body {
 
 /* || Page styles */
 .page {
-  position: relative;
   padding: 3.875rem 1.5rem;
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 3.5625rem;
@@ -358,7 +356,8 @@ body {
 /* || Desktop styles */
 @media (min-width: 90rem) {
   .page {
-    padding: 6.375rem 10.3125rem;
+    position: relative;
+    padding: 6.375rem 10.3125rem 4.62375rem;
     gap: 6.4375rem;
   }
 
@@ -368,9 +367,9 @@ body {
   }
 
   .page::after {
-    left: unset;
+    left: initial;
     right: 0;
-    bottom: 5.75rem;
+    bottom: 1rem;
   }
 
   .hero {
