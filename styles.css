@@ -285,7 +285,6 @@ button:focus-visible {
   }
 
   .page::after {
-    /* content: url("assets/desktop/bg-pattern-dots.svg"); */
     content: "";
     background-image: url("assets/desktop/bg-pattern-dots.svg");
     background-repeat: no-repeat;
