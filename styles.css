@@ -111,6 +111,12 @@ body {
   border-width: 0;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 0.3rem solid var(--color-pale-green-200);
+  outline-offset: 0.5rem;
+}
+
 /* || Page styles */
 .page {
   padding: 3.875rem 1.5rem;
@@ -224,6 +230,10 @@ body {
 .cta-form__input::placeholder {
   color: inherit;
   opacity: 0.5;
+}
+
+.cta-form__input:focus-visible {
+  outline: 0.125rem dashed var(--color-pale-green-200);
 }
 
 .cta-form__submit {
@@ -359,7 +369,7 @@ body {
 @media (min-width: 75.625rem) {
   .page {
     position: relative;
-    padding: 6.375rem 10.3125rem 4.62375rem;
+    padding: 6.375rem 10.3125rem 4.56125rem;
     gap: 6.4375rem;
   }
 
